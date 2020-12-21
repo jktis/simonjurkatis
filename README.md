@@ -1,3 +1,3 @@
 # Simon Jurkatis
 
-Welcome to my webiste!
+Welcome to my website!
