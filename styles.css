@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Your CSS code here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Example of making the header and footer span the full width of the viewport */
+header, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto; /* Align the main content to the left */
+    margin-right: auto; /* Align the main content to the right */
+}
+
+/* Example of making the main content area responsive */
+main {
+    width: 100%; /* Adjust width as needed */
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 20px auto; /* Adjust the top and bottom margin */
+    margin-left: auto; /* Align the main content to the left */
+    margin-right: auto; /* Align the main content to the right */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Target specific section headers and apply left alignment with additional margin */
+main h3 {
+    text-align: left;
+    margin-left: 0px; /* Adjust margin as needed */
+    margin-top: 35px; /* Add bottom margin to create space */
+}
+
+
+/* Apply custom design to the paper entry */
+paper-entry {
+    display: block;
+    margin-bottom: 20px; /* Add margin to separate paper entries */
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05); /* Adjust shadow strength */
+    border-radius: 8px; /* Add rounded corners */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    position: relative; /* Set position to relative */
+    overflow: visible; /* Ensure overflow is visible */
+}
+
+/* Lift the paper entry when hovered over */
+paper-entry:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust lifted shadow strength */
+}
+
+paper-entry b[slot="title"] {
+    font-weight: bold;
+}
+
+paper-entry span[slot="details"] {
+    margin-left: 0px; /* Add margin between title and details */
+}
+
+paper-entry a[slot="link"] {
+    display: block;
+    margin-top: 5px; /* Add margin between links */
+}
+
+
+/* Hide the abstract by default */
+.abstract {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the paper entry */
+    left: 0;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 100000; /* Ensure the abstract is above other content */
+}
+
+.link-text {
+    color: blue; /* Set link text color */
+    text-decoration: underline; /* Underline link text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.link-text:hover {
+    color: darkblue; /* Darken link text color on hover */
+}
