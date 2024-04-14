@@ -26,7 +26,15 @@ header, footer {
     max-width: 1200px;
     margin-left: auto; /* Align the main content to the left */
     margin-right: auto; /* Align the main content to the right */
+    padding-left: 10px; /* Add padding to the left side */
+    margin-top: 40px
 }
+
+
+.header-details {
+    margin-left: 10px; /* Move content to the right by 10px */
+}
+
 
 /* Example of making the main content area responsive */
 main {
@@ -35,6 +43,7 @@ main {
     margin: 20px auto; /* Adjust the top and bottom margin */
     margin-left: auto; /* Align the main content to the left */
     margin-right: auto; /* Align the main content to the right */
+    padding-left: 10px; /* Add padding to the left side */
 }
 
 img {
@@ -87,7 +96,10 @@ paper-entry a[slot="link"] {
     position: absolute;
     top: 100%; /* Position below the paper entry */
     left: 0;
+    min-width: 250px; /* Set minimum width for the abstract */
     width: 50%;
+    max-height: 200px; /* Set maximum height for the abstract */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.9);
     border-top-left-radius: 8px;
@@ -104,4 +116,22 @@ paper-entry a[slot="link"] {
 
 .link-text:hover {
     color: darkblue; /* Darken link text color on hover */
+}
+
+.post-tag {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    cursor: pointer;
+    transition: font-size 0.3s; /* Add transition for smooth effect */
+}
+
+.post-details {
+    margin-top: 5px;
+}
+
+.post-title:hover {
+    font-size: 103%; /* Increase font size on hover */
 }

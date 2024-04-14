@@ -10,17 +10,12 @@
     <body>
         <header>
             <h3>Simon Jurkatis</h3>
-            <p>PhD in Economics</p>
-            <p>Senior Research Economist, Bank of England</p>       
+            <p class="header-details">PhD in Economics</p>
+            <p class="header-details">Senior Research Economist, Bank of England</p>       
+            <p class="header-details">Contact: simon[dot]jurkatis[at]bankofengland.co.uk</p>       
+            <p class="header-details">Research Interests: Market Microstructure, OTC Markets, Herd Behaviour, Applied Econometrics</p>       
         </header>
         <main>      
-            <h3>Contact</h3>
-            <p>simon[dot]jurkatis[at]bankofengland.co.uk</p>
-
-            <h3>Research Interests</h3>
-            <p>
-            Market Microstructure, OTC Markets, Herd Behaviour, Applied Econometrics</p>
-            </p>
             
             <h3>Published</h3>
             <!-- Define a custom HTML tag for a paper entry -->
@@ -28,8 +23,8 @@
                 <b slot="title">Non-Standard Errors.</b> 
                 <span slot="details">2023, with 342 co-authors from 34 countries and 207 institutions, Journal of Finance (<i>forthcoming</i>)</span>
                 <div slot="link">
-                    <a class="link-text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3961574" target="_blank">[SSRN Working Paper]</a>
-                    <a class="link-text" href="https://fincap.academy/" target="_blank">[#fincap]</a>
+                    <a class="link-text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3961574" target="_blank" onclick="event.stopPropagation()">[SSRN Working Paper]</a>
+                    <a class="link-text" href="https://fincap.academy/" target="_blank" onclick="event.stopPropagation()">[#fincap]</a>
                 </div>
                 <div class="abstract" slot="abstract">
                     <b>Abstract.</b> In statistics, samples are drawn from a population in a data-generating process (DGP). Standard errors measure the uncertainty in estimates of population parameters. In science, evidence is generated to test hypotheses in an evidence-generating process (EGP). We claim that EGP variation across researchers adds uncertainty: Non-standard errors (NSEs). We study NSEs by letting 164 teams test the same hypotheses on the same data. NSEs turn out to be sizable, but smaller for better reproducible or higher rated research. Adding peer-review stages reduces NSEs. We further find that this type of uncertainty is underestimated by participants.
@@ -40,9 +35,9 @@
                 <b slot="title">Inferring Trade Directions in Fast Markets.</b> 
                 <span slot="details">Journal of Financial Markets, 2022, Vol 58, 100635</span>
                 <div slot="link">
-                    <a class="link-text" href="https://ssrn.com/abstract=3748290" target="_blank">[Bank of England Working Paper]</a>
-                    <a class="link-text" href="online-appendix.pdf" target="_blank">[Online Appendix]</a>
-                    <a class="link-text" href="https://github.com/jktis/Trade-Classification-Algorithms" target="_blank">[Code on GitHub]</a>
+                    <a class="link-text" href="https://ssrn.com/abstract=3748290" target="_blank" onclick="event.stopPropagation()">[Bank of England Working Paper]</a>
+                    <a class="link-text" href="online-appendix.pdf" target="_blank" onclick="event.stopPropagation()">[Online Appendix]</a>
+                    <a class="link-text" href="https://github.com/jktis/Trade-Classification-Algorithms" target="_blank" onclick="event.stopPropagation()">[Code on GitHub]</a>
                 </div>
                 <div class="abstract" slot="abstract">
                     <b>Abstract.</b> The reliability of trade classification algorithms that identify the liquidity demander in financial markets transaction data has been questioned due to an increase in the frequency of quote changes. Hence, this paper proposes a new method. While established algorithms rely on an ad hoc assignment of trades to quotes, the proposed full-information (FI) algorithm actively searches for the quote that matches a trade. The FI algorithm outperforms the existing ones, particularly at low timestamp precision: For data timestamped at seconds misclassification is reduced by half compared to the popular Lee-Ready algorithm. These improvements also carry over into empirical applications such as the estimation of transaction costs. The recently proposed interpolation method and bulk volume classification algorithm do not offer improvements.
@@ -53,9 +48,9 @@
 
             <paper-entry>
                 <b slot="title">Relationship discounts in corporate bond trading.</b> 
-                <span slot="details">2022, with Karamfil Todorov, Andreas Schrimpf, Nicholas Vause</span>
+                <span slot="details">2022, SWP No. 1049, with Karamfil Todorov, Andreas Schrimpf, Nicholas Vause</span>
                 <div slot="link">
-                    <a class="link-text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4301416" target="_blank">[SSRN]</a>
+                    <a class="link-text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4698292" target="_blank" onclick="event.stopPropagation()">[Bank of England Working Paper]</a>
                 </div>
                 <div class="abstract" slot="abstract">
                     <b>Abstract.</b> We find that clients with stronger past trading relationships with a dealer receive consistently better prices in corporate bond trading. The top 1% of relationship clients enjoy transaction costs that are 51% lower than those of the median client—an effect which was particularly beneficial when transaction costs spiked during the COVID-19 turmoil. We find clients' liquidity provision to be a key motive why dealers grant relationship discounts: clients to whom balance-sheet constrained dealers can turn as a source of liquidity are rewarded with relationship discounts. Another important motive for dealers to give discounts to relationship clients is because these clients generate the bulk of dealers' profits. Finally, we find no evidence that extraction of information from clients' order flow is
@@ -67,7 +62,7 @@
                 <b slot="title">Why you should not use the LSV herding measure.</b> 
                 <span slot="details">2022, SWP No. 959 </span>
                 <div slot="link">
-                    <a class='link-text' href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4013922" target="_blank">[Bank of England Working Paper]</a>
+                    <a class='link-text' href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4013922" target="_blank" onclick="event.stopPropagation()">[Bank of England Working Paper]</a>
                 </div>
                 <div class="abstract" slot="abstract">
                     <b>Abstract.</b> Here are three reasons. (a) This paper proves that the popular investor-level herding measure is a biased estimator of herding. Monte Carlo simulations demonstrate that the measure underestimates herding by 20% to 100% of the estimation target. (b) The bias varies with the number of traders active in an asset such that regression type analyses using LSV to understand the causes and consequences of herding are likely to yield inconsistent estimates if controls are not carefully chosen. (c) The measure should be understood purely as a test on binomial overdispersion. However, alternative tests have superior size and power properties. 
@@ -75,18 +70,21 @@
             </paper-entry>
             
             <h3>Posts</h3>
-            <p>
-                <a href="https://bankunderground.co.uk/2023/07/18/lifting-the-lid-on-a-liquidity-crisis/
-                " target="_blank">Lifting the lid on a liquidity crisis</a>, July 2023          
-            </p>    
-            <p>
-            <a href="https://bankunderground.co.uk/2022/11/24/strengthening-the-resilience-of-market-based-finance/" target="_blank">Strengthening the resilience of market-based finance</a>, Nov 2022
-            </p>
-            <p>
-            <a href="https://bankunderground.co.uk/2021/06/25/procyclicality-mechanisms-in-the-financial-system-what-we-know-and-some-open-questions/" target="_blank">Procyclicality mechanisms in the financial system: what we know and some open questions</a>, June 2021          
-            (<i><a href="https://bankunderground.co.uk/2021/12/21/our-top-5-posts-of-2021/" target="_blank">Top 5 BU post in 2021</a></i>)
-            </p>
-
+            <div class="post-tag">
+                <p>
+                    <span class="post-title" onclick="openPostLink('https://bankunderground.co.uk/2023/07/18/lifting-the-lid-on-a-liquidity-crisis/')">Lifting the lid on a liquidity crisis</span> (July 18, 2023)
+                </p>
+            </div>
+            <div class="post-tag">
+                <p>
+                    <span class="post-title" onclick="openPostLink('https://bankunderground.co.uk/2022/11/24/strengthening-the-resilience-of-market-based-finance/')">Strengthening the resilience of market-based finance</span> (Nov 24, 2022)
+                </p>
+            </div>
+            <div class="post-tag">
+                <p>
+                    <span class="post-title" onclick="openPostLink('https://bankunderground.co.uk/2021/06/25/procyclicality-mechanisms-in-the-financial-system-what-we-know-and-some-open-questions/')">Procyclicality mechanisms in the financial system: what we know and some open questions</span> (Jun 25, 2021) [<a href="https://bankunderground.co.uk/2021/12/21/our-top-5-posts-of-2021/" target="_blank">Top 5 BU post in 2021</a>]
+                </p>
+            </div>         
 
         </main>
         <footer>
@@ -101,18 +99,28 @@
 
             paperEntries.forEach(entry => {
                 entry.addEventListener('click', function(event) {
-                    // Check if the clicked element is a link
-                    if (event.target.tagName.toLowerCase() !== 'a') {
-                        const abstract = this.querySelector('.abstract');
-                        if (abstract.style.display === 'none' || abstract.style.display === '') {
-                            abstract.style.display = 'block';
-                        } else {
+                    // Close all abstracts except the one for the clicked paper entry
+                    const clickedAbstract = this.querySelector('.abstract');
+                    const allAbstracts = document.querySelectorAll('.abstract');
+                    allAbstracts.forEach(abstract => {
+                        if (abstract !== clickedAbstract) {
                             abstract.style.display = 'none';
                         }
+                    });
+
+                    // Toggle display of the abstract for the clicked paper entry
+                    if (clickedAbstract.style.display === 'none' || clickedAbstract.style.display === '') {
+                        clickedAbstract.style.display = 'block';
+                    } else {
+                        clickedAbstract.style.display = 'none';
                     }
                 });
             });
         });
+
+        function openPostLink(url) {
+            window.open(url, '_blank');
+        }
         </script>
     </body>
 </html>
