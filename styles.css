@@ -31,20 +31,50 @@ header, footer {
 }
 
 
-.header-details {
-    margin-left: 10px; /* Move content to the right by 10px */
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: auto;
+    gap: 10px;
 }
 
-/*
 .header-image {
+    grid-row: 1; 
+    grid-column: 1; 
+    justify-self: start;
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-/*    border-radius: 50%; /* Make the image round */
-/*    width: 200px; /* Adjust the width of the image */
-/*    height: 200px; /* Set the height equal to the width */
-/*    object-fit: cover; /* Maintain aspect ratio and cover container */
-/*} 
-*/
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+
+.header-details {
+    grid-row: 1; /* Details in first row */
+    grid-column: 2; /* Details in second column */
+    margin-left: 15px;
+}
+
+.header-details p {
+    margin-bottom: 0px; /* Adjust margin between <p> elements as needed */
+    margin-top: 5px; /* Adjust margin between <p> elements as needed */
+}
+
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-logo {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px; /* Adjust spacing between logos as needed */
+}
+
+
 
 
 /* Example of making the main content area responsive */
