@@ -47,6 +47,7 @@ header, footer {
     width: 150px; 
     height: 150px;
     object-fit: cover;
+    clip-path: circle();
 }
 
 .header-details {
